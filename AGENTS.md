@@ -3,6 +3,11 @@
 Guía para cualquier agente (Claude Code) que trabaje en este repositorio.
 Léela completa antes de crear o modificar un skill.
 
+> **Lee también `MEMORY.md` al inicio de cada tarea.** Contiene las
+> correcciones y preferencias acumuladas del usuario y tiene prioridad sobre
+> los hábitos por defecto. Cada vez que el usuario te corrija, **actualízalo**
+> antes de dar la tarea por terminada.
+
 ## Qué es este proyecto
 
 Es un **laboratorio de aprendizaje** para construir múltiples **Claude Code
@@ -114,6 +119,8 @@ Repasa esta lista para cada skill:
 - [ ] No hay carpetas de recursos vacías.
 - [ ] **Prueba real en Claude Code:** se invoca el skill en una sesión y se
       confirma que se activa con los disparadores esperados y funciona.
+- [ ] Se aplicaron las lecciones vigentes de `MEMORY.md`, y toda corrección
+      nueva del usuario quedó registrada allí.
 
 Un skill no está terminado hasta pasar el frontmatter y la prueba real.
 

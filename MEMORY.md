@@ -35,4 +35,11 @@ recientes arriba). Usa esta plantilla:
 
 <!-- Añade aquí las entradas nuevas, las más recientes arriba. -->
 
-_Aún no hay correcciones registradas._
+### [2026-07-17] La `description` va en español, no en inglés
+
+- **Contexto:** al crear el skill `skill-creator` surgió la duda del idioma del
+  frontmatter, que `AGENTS.md` marcaba como inglés.
+- **Corrección:** el campo `description` es el disparador y debe coincidir con
+  cómo pregunta el usuario (español); en inglés no se activaría.
+- **Regla:** `name` y código en inglés, pero `description` (y el cuerpo del
+  skill) en español. Reflejado en `AGENTS.md` → sección "Idioma".

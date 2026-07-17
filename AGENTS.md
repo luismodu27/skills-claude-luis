@@ -20,7 +20,10 @@ El objetivo es iterar rápido y aprender, pero escribiendo cada skill con
 ## Idioma
 
 - **Documentación, cuerpo de los skills y comentarios:** español.
-- **Nombres de carpeta, campo `name`, frontmatter y código:** inglés.
+- **Nombres de carpeta, campo `name` y código:** inglés.
+- **Campo `description`:** en **español**. Es el disparador del skill y debe
+  coincidir con cómo pregunta el usuario (que trabaja en español); escribirla
+  en inglés impediría que se active.
 
 ## Estructura del repositorio
 

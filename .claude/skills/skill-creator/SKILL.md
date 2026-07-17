@@ -37,8 +37,9 @@ Si algo de este skill contradice a esos archivos, **gana `AGENTS.md`/`MEMORY.md`
    activarse, haz 1–3 preguntas breves antes de escribir nada.
 2. **Elige el nombre.** kebab-case en inglés, ≤ 64 chars; la carpeta y el campo
    `name` deben ser idénticos (p. ej. `csv-cleaner`).
-3. **Crea la estructura.** `skills/<nombre-skill>/SKILL.md`. Añade
-   `references/`, `scripts/` o `assets/` **solo si hacen falta**.
+3. **Crea la estructura.** `.claude/skills/<nombre-skill>/SKILL.md` (única ruta
+   que Claude Code descubre). Añade `references/`, `scripts/` o `assets/`
+   **solo si hacen falta**.
 4. **Escribe el `SKILL.md`** a partir de la plantilla de `AGENTS.md`:
    - `description` en **español**, en tercera persona, con **qué hace** +
      **cuándo usarlo** y frases disparadoras concretas que el usuario diría.

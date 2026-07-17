@@ -35,6 +35,15 @@ recientes arriba). Usa esta plantilla:
 
 <!-- Añade aquí las entradas nuevas, las más recientes arriba. -->
 
+### [2026-07-17] Los skills deben ir en `.claude/skills/`, no en `skills/`
+
+- **Contexto:** habíamos colocado los skills en `skills/<nombre>/SKILL.md` en la
+  raíz del repo.
+- **Corrección:** Claude Code solo descubre skills en `.claude/skills/<nombre>/`;
+  una carpeta `skills/` en la raíz no se carga automáticamente.
+- **Regla:** todos los skills viven en `.claude/skills/<nombre>/SKILL.md`.
+  Reflejado en `AGENTS.md` → "Estructura del repositorio".
+
 ### [2026-07-17] La `description` va en español, no en inglés
 
 - **Contexto:** al crear el skill `skill-creator` surgió la duda del idioma del

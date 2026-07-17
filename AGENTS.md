@@ -29,16 +29,21 @@ El objetivo es iterar rápido y aprender, pero escribiendo cada skill con
 
 ```
 skills-claude-luis/
+├── CLAUDE.md              # Autocarga; importa AGENTS.md y MEMORY.md
 ├── AGENTS.md              # Este archivo
+├── MEMORY.md              # Correcciones acumuladas
 ├── README.md
-└── skills/
-    └── <nombre-skill>/    # Una carpeta por skill (kebab-case en inglés)
-        ├── SKILL.md       # Obligatorio: punto de entrada
-        ├── references/    # Opcional: detalle extenso, cargado bajo demanda
-        ├── scripts/       # Opcional: scripts ejecutables
-        └── assets/        # Opcional: plantillas, imágenes, datos
+└── .claude/
+    └── skills/
+        └── <nombre-skill>/    # Una carpeta por skill (kebab-case en inglés)
+            ├── SKILL.md       # Obligatorio: punto de entrada
+            ├── references/    # Opcional: detalle extenso, cargado bajo demanda
+            ├── scripts/       # Opcional: scripts ejecutables
+            └── assets/        # Opcional: plantillas, imágenes, datos
 ```
 
+- **Los skills viven en `.claude/skills/`.** Es la única ruta que Claude Code
+  escanea automáticamente; una carpeta `skills/` en la raíz **no** se descubre.
 - **Una carpeta por skill.** Cada skill es autónomo.
 - Crea `references/`, `scripts/` o `assets/` **solo cuando hagan falta**; no
   dejes carpetas vacías.
@@ -138,7 +143,7 @@ Un skill no está terminado hasta pasar el frontmatter y la prueba real.
 
 ## Al crear un skill nuevo — checklist rápido
 
-1. Crea la carpeta `skills/<nombre-skill>/` y la rama `skill/<nombre-skill>`.
+1. Crea la carpeta `.claude/skills/<nombre-skill>/` y la rama `skill/<nombre-skill>`.
 2. Escribe el `SKILL.md` a partir de la plantilla.
 3. Añade recursos en `references/`, `scripts/` o `assets/` solo si hacen falta.
 4. Ejecuta la lista de validación.
